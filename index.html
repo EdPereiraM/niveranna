@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 
+    Teste do método window.alert() 
+</title> 
+<meta charset="utf-8">
+</head> 
+<body> 
+<form name="formCadastro" onsubmit="return validarFormulario()" method="post">
+    <label for="nome">Qual o seu maior desejo?</label>
+    <input type="text" name="nome">
+    <input type="submit" value="Enviar">
+</form>
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["nome"].value;
+        if (nomePessoa == "") {
+            alert("Favor informar o seu nome!");
+            return false;     
+        }
+        else{
+            alert("Qual a última vez que você desejou algo espiritual, não físico ou material?");
+            return true;
+        }
+    }
+</script>
+</body> 
+</html> 
